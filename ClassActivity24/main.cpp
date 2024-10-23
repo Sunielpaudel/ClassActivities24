@@ -1,6 +1,8 @@
 #include <iostream>
 #include "forCustomer.hpp"
 
+using namespace CustomerNamespace;
+
 int main() {
    
     Customer customer;
@@ -8,7 +10,7 @@ int main() {
     std::cout << "Enter Customer ID: ";
     std::cin >> customer.id;
 
-    //std::cin.ignore();
+    std::cin.ignore();
 
     std::cout << "Enter Customer Name: ";
     getline(std::cin, customer.name);

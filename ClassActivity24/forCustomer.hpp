@@ -2,13 +2,15 @@
 #define CUSTOMER_H
 
 #include <string>
+namespace CustomerNamespace {
 
-struct Customer {
-    int id;
-    std::string name;
-   std:: string email;
+    struct Customer {
+        int id;
+        std::string name;
+        std::string email;
 
-    void displayCustomer();
-};
+        void displayCustomer();
+    };
+}
 
-#endif
+#endif CUSTOMER_H
